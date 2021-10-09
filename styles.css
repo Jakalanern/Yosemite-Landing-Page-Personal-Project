@@ -488,3 +488,42 @@
 
     /* Change park rangers box into display: column instead of row when at specific width  */
   }
+
+
+  /* IPHONE X */
+  @media (max-width: 400px) {
+
+    #parallax-one {
+      height: 700px;
+      align-items: flex-start;
+      padding-top: 10em;
+    }
+
+    .parallax-one #main-title {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 4.5em;
+    }
+
+    .form {
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-ele {
+      width: 50%;
+    }
+
+    #text-area {
+      width: 20rem;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #text-container {
+      margin: 0 0 0 0;
+    }
+  }
