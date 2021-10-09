@@ -1,2 +1,2 @@
 # Landing-Page-One
-Portfolio Stuffz
+Portfolio Stuffs
