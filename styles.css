@@ -9,7 +9,6 @@
   html {
     overflow: hidden;
     overflow-x: hidden;
-    overflow-y: auto;
     min-height: 100%;
   }
 
