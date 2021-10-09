@@ -492,7 +492,7 @@
 
 
   /* IPHONE X */
-  @media (max-width: 400px) {
+  @media (max-width: 375px) {
 
     #parallax-one {
       width: 375px;
