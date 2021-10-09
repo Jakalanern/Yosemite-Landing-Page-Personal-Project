@@ -13,7 +13,6 @@ const barTwo = document.querySelector(".bar2")
 const barThree = document.querySelector(".bar3")
 const checkbox = document.querySelector(".hamburger-check")
 const dropdown = document.querySelector(".dropdown-nav")
-
 const rangersM = document.querySelector("#rangers")
 const contactM = document.querySelector("#contact")
 const campsitesM = document.querySelector("#campsites")
@@ -60,21 +59,6 @@ window.addEventListener("scroll", function () {
 })
 
 //Setting the default underline for our nav elements
-for (let ele of navele) {
-    ele.addEventListener("mouseenter", function () {
-        if (window.innerWidth > 1175) {
-            ele.style.borderBottom = "1px solid white"
-            ele.style.paddingBottom = ".15em"
-        }
-
-    })
-    if (window.innerWidth > 1175) {
-        ele.addEventListener("mouseleave", function () {
-            ele.style.borderBottom = "transparent"
-        })
-    }
-
-}
 
 //Change font color and underline once transition has happened when Y === 150
 //Only works if we are on desktop (past 1175px width)
@@ -111,12 +95,9 @@ home.addEventListener("click", function () {
         behavior: 'smooth'
     })
 })
-campsites.addEventListener("click", function () {
-    window.scrollTo({
-        top: 675,
-        left: 0,
-        behavior: 'smooth'
-    })
+campsites.addEventListener("click", function (e) {
+    e.preventDefault();
+    rangers.scrollIntoView();
 })
 rangers.addEventListener("click", function () {
     window.scrollTo({
@@ -147,47 +128,47 @@ habitats.addEventListener("click", function () {
     })
 })
 // Same thing but for mobile dropdown
-homeM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
-campsitesM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 675,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
-rangersM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 1865,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
-historyM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 2465,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
-contactM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 3755,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
-habitatsM.addEventListener("click", function () {
-    window.scrollTo({
-        top: 4255,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
+// homeM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 0,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
+// campsitesM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 675,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
+// rangersM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 1865,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
+// historyM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 2465,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
+// contactM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 3755,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
+// habitatsM.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 4255,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
+// })
 
 //When screen is < 1175px let's make a stack for the nav
