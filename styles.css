@@ -527,7 +527,7 @@
     }
 
     .form {
-      width: 100%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -545,6 +545,6 @@
     }
 
     #text-container {
-      margin: 0 0 0 0;
+      margin: 1em !important;
     }
   }
