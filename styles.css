@@ -495,18 +495,18 @@
   @media (max-width: 400px) {
 
     #parallax-one {
-      width: 1400px;
+      width: 375px;
       height: 700px;
       align-items: flex-start;
       padding-top: 10em;
     }
 
     #parallax-two {
-      width: 1400px;
+      width: 375px;
     }
 
     #parallax-three {
-      width: 1400px;
+      width: 375px;
     }
 
     .parallax-one #main-title {
