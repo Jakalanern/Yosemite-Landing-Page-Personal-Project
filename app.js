@@ -62,30 +62,6 @@ window.addEventListener("scroll", function () {
 
 //Change font color and underline once transition has happened when Y === 150
 //Only works if we are on desktop (past 1175px width)
-window.addEventListener("scroll", function () {
-    for (let ele of navele) {
-        if (window.innerWidth > 1175) {
-            if (window.scrollY > 75) {
-                ele.addEventListener("mouseenter", function () {
-                    ele.style.borderBottom = "1px solid black"
-                    ele.style.paddingBottom = ".15em"
-                })
-                ele.addEventListener("mouseleave", function () {
-                    ele.style.borderBottom = "transparent"
-                })
-            } else {
-                ele.addEventListener("mouseenter", function () {
-                    ele.style.borderBottom = "1px solid white"
-                    ele.style.paddingBottom = ".15em"
-                })
-                ele.addEventListener("mouseleave", function () {
-                    ele.style.borderBottom = "transparent"
-                })
-            }
-        }
-
-    }
-})
 
 // Scroll On Nav Element Click
 home.addEventListener("click", function () {

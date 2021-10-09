@@ -121,8 +121,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1.5em 0px 1.5em 0px;
-    top: 0;
+    padding: 1.5em 1.5em 1.5em 1.5em;
     position: fixed;
     text-align: center;
   }
@@ -150,7 +149,6 @@
     font-size: 1.5em;
     letter-spacing: 5px;
     font-weight: 300;
-    text-decoration: none;
   }
 
   .navele:hover {
@@ -264,7 +262,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 95%;
+    width: 50%;
     height: 75%;
   }
 
@@ -294,13 +292,15 @@
   #staff-title {
     color: white;
     text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.925);
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: 100;
-    padding-bottom: .10em;
     border-bottom: 1px solid white;
+    ;
+    padding-bottom: .10em;
     margin: .5em;
     margin-bottom: -.5em;
     text-align: center;
+    overflow: hidden;
   }
 
   #parallax-two {
@@ -319,6 +319,38 @@
   /* BUILDING RESPONSIVENESS */
 
   /* DISABLE CURRENT JAVASCRIPT at max-width and collapse into stack */
+
+  @media (max-width: 1800px) {
+    #staff-title {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+
+    .staff-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 75%;
+      width: 75%;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .employee-box {
+      width: 10em;
+      margin: 0em 0em;
+    }
+
+    .employee-name {
+      font-size: .85rem;
+    }
+
+    .employee-image {
+      height: 12em;
+      width: 10em;
+    }
+  }
 
   @media (max-width: 1175px) {
 
@@ -459,32 +491,33 @@
 
     #staff-title {
       font-size: 2.5em;
-      margin-bottom: 0;
+      margin-bottom: 1em;
     }
 
     .staff-box {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
-      height: 600px;
-      width: 100%;
+      height: 75%;
+      width: 50%;
       background-color: transparent;
       padding: 0;
     }
 
     .employee-box {
-      width: 8em;
+      width: 10rem;
       margin: 0em 0em;
     }
 
     .employee-name {
-      font-size: 1em;
+      font-size: .85rem;
     }
 
     .employee-image {
       height: 12em;
-      width: 8em;
+      width: 10em;
     }
 
 
@@ -493,6 +526,38 @@
     /* Change park rangers box into display: column instead of row when at specific width  */
   }
 
+  @media (max-width: 700px) {
+    #staff-title {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+    }
+
+    .staff-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 75%;
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .employee-box {
+      width: 10rem;
+      margin: 0em 0em;
+    }
+
+    .employee-name {
+      font-size: .85rem;
+    }
+
+    .employee-image {
+      height: 12em;
+      width: 10em;
+    }
+  }
 
   /* IPHONE X */
   @media (max-width: 500px) {
@@ -563,5 +628,36 @@
 
     #text-container {
       margin: 1em !important;
+    }
+
+    #staff-title {
+      font-size: 2.5em;
+      margin-bottom: .5em;
+    }
+
+    .staff-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 75%;
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .employee-box {
+      width: 8rem;
+      margin: 0em 0em;
+    }
+
+    .employee-name {
+      font-size: .85rem;
+    }
+
+    .employee-image {
+      height: 12em;
+      width: 8em;
     }
   }
