@@ -12,7 +12,7 @@
   }
 
   #parallax-one {
-    background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/03/Yosemite%20Valley%20Sierra%20Nevada%204K6595715354.jpg);
+    background-image: url(imgs/yosem1.jpg);
     width: 100%;
     height: 1300px;
     background-attachment: fixed;
@@ -27,7 +27,7 @@
   }
 
   #parallax-two {
-    background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+    background-image: url(imgs/yosem2.jpg);
     width: 100%;
     height: 600px;
     background-attachment: fixed;
@@ -40,7 +40,7 @@
   }
 
   #parallax-three {
-    background-image: url(https://images.unsplash.com/photo-1505053262691-624063f94b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+    background-image: url(imgs/yosem3.jpg);
     width: 100%;
     height: 400px;
     background-attachment: fixed;
