@@ -524,18 +524,18 @@
     }
 
     .form {
-      width: 75%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     .form-ele {
-      width: 50%;
+      width: 100%;
     }
 
     #text-area {
-      width: 5em;
+      width: 50%;
       justify-content: center;
       margin: 0;
       padding: 0;
