@@ -494,9 +494,18 @@
   @media (max-width: 400px) {
 
     #parallax-one {
+      width: 1400px;
       height: 700px;
       align-items: flex-start;
       padding-top: 10em;
+    }
+
+    #parallax-two {
+      width: 1400px;
+    }
+
+    #parallax-three {
+      width: 1400px;
     }
 
     .parallax-one #main-title {
@@ -506,7 +515,7 @@
     }
 
     .form {
-      width: 375px;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -517,7 +526,7 @@
     }
 
     #text-area {
-      width: 20rem;
+      width: 15em;
       justify-content: center;
       margin: 0;
       padding: 0;
