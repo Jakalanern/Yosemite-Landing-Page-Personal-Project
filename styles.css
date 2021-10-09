@@ -505,6 +505,7 @@
       width: 100%;
       height: 700px;
       align-items: flex-start;
+      background-size: cover;
       padding-top: 10em;
     }
 
