@@ -502,6 +502,7 @@
     }
 
     #parallax-one {
+      background-attachment: scroll;
       width: 100%;
       height: 700px;
       align-items: flex-start;
@@ -510,10 +511,12 @@
     }
 
     #parallax-two {
+      background-attachment: scroll;
       width: 100%;
     }
 
     #parallax-three {
+      background-attachment: scroll;
       text-align: center;
       align-items: center;
       justify-content: center;
