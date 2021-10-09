@@ -70,6 +70,7 @@
   }
 
   .form {
+    display: flex;
     margin-bottom: .5em;
   }
 
@@ -492,7 +493,11 @@
 
 
   /* IPHONE X */
-  @media (max-width: 375px) {
+  @media (max-width: 500px) {
+
+    #contact-title {
+      text-align: center;
+    }
 
     #parallax-one {
       width: 375px;
@@ -506,7 +511,7 @@
     }
 
     #parallax-three {
-      width: 375px;
+      width: 80%;
     }
 
     .parallax-one #main-title {
@@ -527,7 +532,7 @@
     }
 
     #text-area {
-      width: 15em;
+      width: 5em;
       justify-content: center;
       margin: 0;
       padding: 0;
